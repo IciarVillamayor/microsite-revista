@@ -1,0 +1,388 @@
+* {
+  box-sizing: border-box;
+  /*border: solid 3px peachpuff;*/
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Gotham Rounded", sans-serif;
+  font-weight: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  border-bottom: 3px solid black;
+}
+
+.header img {
+  height: 80px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 4em;
+}
+.content #entrevistas {
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 3px solid black;
+}
+
+.content #entrevistas .head {
+  display: block;
+  width: 100%;
+  margin-left: 1em;
+  font-size: 1.5rem;
+}
+
+/*===   CARDS DE SECCIÓN ENTREVISTAS  ======*/
+
+.card-entrevista {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4em;
+}
+
+
+.card-entrevista .photocard {
+  display: flex;
+}
+
+.card-entrevista .photocard .marco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  border: solid 3px black;
+}
+.card-entrevista .photocard .marco .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+.card-entrevista .photocard .marco .photo img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/*=====   TEXTO DE LOS CARDS  ========*/
+
+.card-entrevista .texto {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2em;
+}
+
+.card-entrevista .texto h2 {
+  width: 100%;
+  font-family: "Gotham", sans-serif;
+  font-size: 1.2rem;
+}
+
+.card-entrevista .texto p {
+  width: 100%;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+/*===  SECCIÓN SALUD  ======*/
+
+#salud {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 3px solid black;
+}
+#salud .head {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  margin-left: 1em;
+}
+
+/*===   CARDS DE SECCIÓN SALUD  ======*/
+
+.card-salud {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4em;
+}
+
+.card-salud .photocard {
+  display: flex;
+}
+
+.card-salud .photocard .marco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 220px;
+  border: solid 3px black;
+}
+
+.card-salud .photocard .marco .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+/*ESTA ES LA FOTO EN MINIATURA*/
+.card-salud .photocard .marco .photo img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/*=====   TEXTO DE LOS CARDS  ========*/
+
+.card-salud .texto {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2em;
+}
+
+.card-salud .texto h2 {
+  width: 100%;
+  font-family: "Gotham", sans-serif;
+  font-size: 1.2rem;
+}
+
+.card-salud .texto p {
+  width: 100%;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+/*=====   ANUNCIOS   ========*/
+
+.publicidad-1 {
+  margin-top: 4em;
+  width: 100%;
+  height: 290px;
+  margin-bottom: 4em;
+  cursor: pointer;
+}
+
+.publicidad-1 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.subscribe {
+  margin-top: 4em;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 4em;
+  cursor: pointer;
+}
+
+.subscribe img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  margin-top: 2em;
+  border-top: 3px solid black;
+}
+
+.footer img {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  height: 50px;
+}
+
+.footer .rs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  margin-top: 10px;
+}
+
+.footer .rs .fa {
+  margin: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+
+@media only screen and (max-width: 960px) {
+
+
+  body {
+    width: 147%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: "Gotham Rounded", sans-serif;
+    font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+
+.content #entrevistas {
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 3px solid black;
+}
+
+
+
+.card-entrevista {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4em;
+}
+
+.card-entrevista .photocard {
+  display: flex;
+  margin-left: 1em;
+}
+
+.card-entrevista .texto {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20%;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+
+
+.publicidad-1 {
+  margin-top: 4em;
+  width: 100%;
+  height: 190px;
+  margin-bottom: 4em;
+  cursor: pointer;
+}
+
+.card-salud {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4em;
+}
+
+.card-salud .texto {
+  display: flex;
+  width: 20%;
+  flex-wrap: wrap;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+
+.card-salud .photocard {
+  display: flex;
+  margin-left: 1em;
+}
+
+
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  body {
+    width: 147%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: "Gotham Rounded", sans-serif;
+    font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+}
+
+.card-entrevista .photocard {
+  display: flex;
+  margin-left: 1em;
+}
+
+.card-entrevista .texto {
+  display: flex;
+  width: 40%;
+  flex-wrap: wrap;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+
+
+.publicidad-1 {
+  margin-top: 4em;
+  width: 100%;
+  height: 190px;
+  margin-bottom: 4em;
+  cursor: pointer;
+}
+
+.card-salud {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4em;
+}
+
+.card-salud .texto {
+  display: flex;
+  width: 40%;
+  flex-wrap: wrap;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+
+.card-salud .photocard {
+  display: flex;
+  margin-left: 1em;
+}
+
+}
